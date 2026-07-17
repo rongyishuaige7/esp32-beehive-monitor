@@ -93,6 +93,14 @@ class SourceContracts(unittest.TestCase):
         self.assertIn('dart format --output=none --set-exit-if-changed lib test', read('scripts/verify.sh'))
         self.assertIn('dart format --output=none --set-exit-if-changed lib test', read('.github/workflows/validate.yml'))
 
+    def test_gradle_wrapper_uses_the_official_8_14_distribution_checksum(self):
+        wrapper = read('app/android/gradle/wrapper/gradle-wrapper.properties')
+        self.assertIn('distributionUrl=https\\://services.gradle.org/distributions/gradle-8.14-all.zip', wrapper)
+        self.assertIn(
+            'distributionSha256Sum=efe9a3d147d948d7528a9887fa35abcf24ca1a43ad06439996490f77569b02d1',
+            wrapper,
+        )
+
     def test_widget_test_tracks_visible_title(self):
         self.assertIn("find.text('蜂箱传感器采样')", read('app/test/widget_test.dart'))
         self.assertIn("'蜂箱传感器采样'", read('app/lib/ui/home_page.dart'))
