@@ -21,24 +21,24 @@ bash scripts/verify.sh
 
 ## 已验证环境与结果
 
-2026-07-17 已在**尚未初始化 Git 的隔离公开候选**上完成一次完整本地门禁。该结果还没有可绑定的 commit；首个本地 commit 与 GitHub exact-HEAD Actions 结果会另行补充，不能提前写成线上 CI 或真机验证。
+2026-07-17 已在隔离公开候选上完成一次完整本地门禁。公开前必须由 GitHub Actions 对最终 `main` 的 exact HEAD 重跑同一套门禁；任何随后提交都会产生新的 HEAD，因此不得用先前提交的 CI 结果替代最终公开提交。
 
 ```text
 PlatformIO Core: 6.1.19
 Flutter: 3.41.2
 Dart: 3.11.0
 Public-candidate complete local gate: PASS
-Python source contracts: 9/9 PASS
+Python source contracts: 10/10 PASS
 ESP32 PlatformIO (esp32dev): PASS
 RAM: 26,992 / 327,680 bytes (8.2%)
 Flash: 438,361 / 1,310,720 bytes (33.4%)
-Flutter tests: PASS (5 tests)
+Flutter tests: PASS (6 tests)
 Flutter analyze: PASS (no issues)
 Android debug APK build: PASS
 Generated-state cleanup and final secret/repository scan: PASS
 ```
 
-该本地构建不等于签名发布包、Android/iOS 真机、ESP32 真机、Wi-Fi、HTTP、传感器或端到端联调。GitHub Actions 的 exact-HEAD 证据仍待在私有仓推送后取得。
+该本地构建不等于签名发布包、Android/iOS 真机、ESP32 真机、Wi-Fi、HTTP、传感器或端到端联调。公开前的 GitHub Actions exact-HEAD 结果只证明同一套无硬件门禁与构建，不证明真机或端到端行为。
 
 ## 当前真机复测清单
 
