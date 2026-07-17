@@ -1,0 +1,11 @@
+# Local Android/Gradle state only. The Gradle wrapper and generated Flutter
+# registrant are source-controlled so a fresh clone can build reproducibly.
+/.gradle/
+/captures/
+/local.properties
+/.cxx/
+
+# Never publicly share a signing keystore or its local properties.
+key.properties
+**/*.keystore
+**/*.jks

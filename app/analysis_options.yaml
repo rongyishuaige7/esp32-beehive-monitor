@@ -1,0 +1,20 @@
+# 本文件配置分析器，用于对 Dart 代码做静态分析，
+# 检查错误、警告与 lint。
+#
+# 分析器发现的问题会显示在支持 Dart 的 IDE 中（见 https://dart.dev/tools#ides-and-editors）。
+# 也可在命令行执行 `flutter analyze` 调用分析器。
+
+# 下一行引入一组面向 Flutter 应用、包与插件的推荐 lint，用于鼓励良好实践。
+include: package:flutter_lints/flutter.yaml
+
+linter:
+  # 可在下方自定义本项目的 lint 规则，以关闭上面 `package:flutter_lints/flutter.yaml`
+  # 中的规则，或启用额外规则。全部可用规则及说明见 https://dart.dev/lints。
+  #
+  # 若不想在整个项目中关闭某条规则，也可在产生该问题的单行或整个 dart 文件中使用
+  # `// ignore: 规则名` 或 `// ignore_for_file: 规则名` 语法进行抑制。
+  rules:
+    # avoid_print: false  # 取消注释以关闭 `avoid_print` 规则
+    # prefer_single_quotes: true  # 取消注释以启用 `prefer_single_quotes` 规则
+
+# 关于本文件的更多信息见 https://dart.dev/guides/language/analysis-options

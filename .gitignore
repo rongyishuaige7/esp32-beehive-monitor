@@ -1,0 +1,47 @@
+# PlatformIO outputs and upload products
+firmware/.pio/
+firmware/src/wifi_credentials.h
+*.bin
+*.elf
+*.map
+*.o
+*.a
+
+# Flutter / Dart / Android / iOS generated state and build outputs
+app/.dart_tool/
+app/.flutter-plugins
+app/.flutter-plugins-dependencies
+app/.pub-cache/
+app/.pub/
+app/build/
+app/coverage/
+app/android/.gradle/
+app/android/local.properties
+app/ios/Flutter/Generated.xcconfig
+app/ios/Flutter/flutter_export_environment.sh
+app/ios/Flutter/ephemeral/
+app/ios/Flutter/.last_build_id
+*.apk
+*.aab
+*.so
+
+# IDE, local logs, and OS files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.log
+*.pyc
+__pycache__/
+.DS_Store
+
+# No unreviewed media, archives, private keys, or release bundles in the first public release.
+*.pem
+*.key
+*.p12
+*.jks
+*.zip
+*.7z
+*.tar
+*.gz

@@ -1,0 +1,15 @@
+# Keep the public source tree stable across Linux, macOS, and Windows clones.
+* text=auto
+*.bat text eol=crlf
+*.sh text eol=lf
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.dart text eol=lf
+*.cpp text eol=lf
+*.h text eol=lf
+*.svg text eol=lf
+*.csv text eol=lf
+*.png binary
+*.jar binary

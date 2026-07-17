@@ -1,0 +1,99 @@
+# Safe source inventory for the 2026-07-17 source audit.
+#
+# This list is intentionally narrow and MUST NOT be expanded with original
+# firmware/src/config.h, wifi_credentials.h, .env*, local.properties,
+# generated state, IDE files, delivery notes, LAN material, or other local
+# files that may contain credentials or machine-specific information.
+#
+# The manifest is computed over these UTF-8 relative paths in sorted order:
+#   path bytes + NUL + source file bytes + NUL
+# The source directory itself stays read-only and is not part of this public
+# repository. The list makes the published file count and digest auditable
+# without reading a credential-bearing source configuration file.
+.gitignore
+README.md
+app/.gitignore
+app/README.md
+app/analysis_options.yaml
+app/android/.gitignore
+app/android/app/build.gradle.kts
+app/android/app/src/debug/AndroidManifest.xml
+app/android/app/src/main/AndroidManifest.xml
+app/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java
+app/android/app/src/main/kotlin/com/beehive/beehive_monitor_app/MainActivity.kt
+app/android/app/src/main/res/drawable-v21/launch_background.xml
+app/android/app/src/main/res/drawable/launch_background.xml
+app/android/app/src/main/res/mipmap-hdpi/ic_launcher.png
+app/android/app/src/main/res/mipmap-mdpi/ic_launcher.png
+app/android/app/src/main/res/mipmap-xhdpi/ic_launcher.png
+app/android/app/src/main/res/mipmap-xxhdpi/ic_launcher.png
+app/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+app/android/app/src/main/res/values-night/styles.xml
+app/android/app/src/main/res/values/styles.xml
+app/android/app/src/profile/AndroidManifest.xml
+app/android/build.gradle.kts
+app/android/gradle.properties
+app/android/gradle/wrapper/gradle-wrapper.jar
+app/android/gradle/wrapper/gradle-wrapper.properties
+app/android/gradlew
+app/android/gradlew.bat
+app/android/settings.gradle.kts
+app/ios/.gitignore
+app/ios/Flutter/AppFrameworkInfo.plist
+app/ios/Flutter/Debug.xcconfig
+app/ios/Flutter/Release.xcconfig
+app/ios/Runner.xcodeproj/project.pbxproj
+app/ios/Runner.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+app/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+app/ios/Runner.xcodeproj/project.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+app/ios/Runner.xcodeproj/xcshareddata/xcschemes/Runner.xcscheme
+app/ios/Runner.xcworkspace/contents.xcworkspacedata
+app/ios/Runner.xcworkspace/xcshareddata/IDEWorkspaceChecks.plist
+app/ios/Runner.xcworkspace/xcshareddata/WorkspaceSettings.xcsettings
+app/ios/Runner/AppDelegate.swift
+app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Contents.json
+app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-1024x1024@1x.png
+app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@1x.png
+app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@2x.png
+app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-20x20@3x.png
+app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@1x.png
+app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@2x.png
+app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-29x29@3x.png
+app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@1x.png
+app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@2x.png
+app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-40x40@3x.png
+app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@2x.png
+app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-60x60@3x.png
+app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@1x.png
+app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-76x76@2x.png
+app/ios/Runner/Assets.xcassets/AppIcon.appiconset/Icon-App-83.5x83.5@2x.png
+app/ios/Runner/Assets.xcassets/LaunchImage.imageset/Contents.json
+app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage.png
+app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@2x.png
+app/ios/Runner/Assets.xcassets/LaunchImage.imageset/LaunchImage@3x.png
+app/ios/Runner/Assets.xcassets/LaunchImage.imageset/README.md
+app/ios/Runner/Base.lproj/LaunchScreen.storyboard
+app/ios/Runner/Base.lproj/Main.storyboard
+app/ios/Runner/GeneratedPluginRegistrant.h
+app/ios/Runner/GeneratedPluginRegistrant.m
+app/ios/Runner/Info.plist
+app/ios/Runner/Runner-Bridging-Header.h
+app/ios/Runner/SceneDelegate.swift
+app/ios/RunnerTests/RunnerTests.swift
+app/lib/main.dart
+app/lib/models/status.dart
+app/lib/services/api_service.dart
+app/lib/ui/home_page.dart
+app/lib/ui/widgets/alert_banner.dart
+app/lib/ui/widgets/ip_input_card.dart
+app/lib/ui/widgets/sensor_card.dart
+app/pubspec.lock
+app/pubspec.yaml
+app/test/widget_test.dart
+firmware/.gitignore
+firmware/platformio.ini
+firmware/src/main.cpp
+firmware/src/sensors.cpp
+firmware/src/sensors.h
+firmware/src/web_server.cpp
+firmware/src/web_server.h

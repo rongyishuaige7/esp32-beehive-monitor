@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="title desc">
+  <title id="title">基于ESP32的蜂箱多传感器数据采集与局域网展示原型：源码推导接线边界图</title>
+  <desc id="desc">展示 ESP32 与 DHT11、BH1750、BMP280、模拟声音输入、MQ-2 原始 ADC、状态 LED 和可信局域网 Flutter 客户端的源码接口。不是原理图、PCB、实物接线或真机验证。</desc>
+  <style>
+    .bg{fill:#f8fafc}.main{fill:#fff7ed;stroke:#c2410c;stroke-width:2.5}.sub{fill:#ffffff;stroke:#475569;stroke-width:2}.net{fill:#eff6ff;stroke:#2563eb;stroke-width:2}.line{stroke:#475569;stroke-width:2.2;fill:none}.dash{stroke:#2563eb;stroke-width:2.2;fill:none;stroke-dasharray:9 7}.title{font:700 25px sans-serif;fill:#0f172a}.label{font:700 21px sans-serif;fill:#1e293b}.text{font:17px sans-serif;fill:#334155}.note{font:16px sans-serif;fill:#9a3412}.small{font:15px sans-serif;fill:#475569}
+  </style>
+  <rect class="bg" width="1280" height="760"/>
+  <text class="title" x="48" y="48">基于ESP32的蜂箱多传感器数据采集与局域网展示原型：源码推导接口边界</text>
+  <text class="note" x="48" y="78">非原理图、非 PCB、非实物接线、非真机复测记录。所有供电、电平、共地、I²C 上拉、地址、限流和实际接线均须按实物确认。</text>
+  <rect class="main" x="470" y="255" width="340" height="230" rx="20"/>
+  <text class="title" x="576" y="307">ESP32</text>
+  <text class="text" x="535" y="344">PlatformIO: esp32dev</text>
+  <text class="text" x="515" y="378">Arduino · 本地传感器采样</text>
+  <text class="text" x="520" y="412">可选 STA + HTTP :80</text>
+  <text class="small" x="500" y="450">GPIO/ADC 输入不得超过 3.3 V</text>
+
+  <rect class="sub" x="55" y="135" width="300" height="108" rx="15"/>
+  <text class="label" x="145" y="178">DHT11</text><text class="text" x="88" y="214">DATA → GPIO4 · 供电/上拉待确认</text>
+  <rect class="sub" x="55" y="310" width="300" height="120" rx="15"/>
+  <text class="label" x="135" y="354">BH1750</text><text class="text" x="86" y="388">SDA GPIO21 · SCL GPIO22</text><text class="small" x="95" y="414">I²C 上拉、地址与电压待确认</text>
+  <rect class="sub" x="55" y="505" width="300" height="120" rx="15"/>
+  <text class="label" x="135" y="548">BMP280</text><text class="text" x="86" y="582">SDA GPIO21 · SCL GPIO22</text><text class="small" x="98" y="608">源码地址 0x76；实物仍待确认</text>
+  <rect class="sub" x="925" y="120" width="300" height="120" rx="15"/>
+  <text class="label" x="978" y="162">模拟声音输入</text><text class="text" x="955" y="196">AO → GPIO34 ADC 峰峰值</text><text class="small" x="944" y="222">模块/摆幅/偏置/调理待确认</text>
+  <rect class="sub" x="925" y="307" width="300" height="138" rx="15"/>
+  <text class="label" x="1010" y="349">MQ-2 原始输入</text><text class="text" x="956" y="383">AO → GPIO35 ADC 平均值</text><text class="small" x="942" y="410">不是烟雾/燃气/火灾检测</text><text class="small" x="944" y="432">必须确认电平调理与供电</text>
+  <rect class="sub" x="925" y="520" width="300" height="104" rx="15"/>
+  <text class="label" x="1015" y="560">状态 LED</text><text class="text" x="978" y="596">GPIO2 → 低功率指示</text>
+  <rect class="net" x="470" y="585" width="340" height="104" rx="16"/>
+  <text class="label" x="526" y="626">可信隔离局域网</text><text class="text" x="495" y="658">Flutter 本地 HTTP 请求</text><text class="small" x="494" y="680">无认证 / 无 TLS / 不得公网暴露</text>
+
+  <path class="line" d="M355 189 H470"/><path class="line" d="M355 370 H470"/><path class="line" d="M355 565 H470"/>
+  <path class="line" d="M810 315 H925"/><path class="line" d="M810 375 H925"/><path class="line" d="M810 442 H870 V572 H925"/>
+  <path class="dash" d="M640 485 V585"/>
+  <text class="note" x="48" y="720">注意：MQ-2、LM386 或其他 AO 输出不能未经验证直接接入 ESP32；不要用本项目连接市电、大功率负载、火源、燃气设备或任何安全关键设备。</text>
+</svg>

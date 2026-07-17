@@ -1,0 +1,23 @@
+name: beehive_monitor_app
+description: Beehive IoT Monitor — Flutter client for ESP32 /api/status
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  # Keep the package language version aligned with the locked dependency graph
+  # and the Flutter 3.41.2 / Dart 3.11.0 validation environment.
+  sdk: ">=3.9.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.2.0
+  shared_preferences: ^2.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
