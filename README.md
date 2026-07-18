@@ -4,7 +4,6 @@
 
 [![Validate](https://github.com/rongyishuaige7/esp32-beehive-monitor/actions/workflows/validate.yml/badge.svg)](https://github.com/rongyishuaige7/esp32-beehive-monitor/actions/workflows/validate.yml)
 [![License: MIT](https://img.shields.io/badge/Code-MIT-f97316.svg)](LICENSE)
-[![Hardware retest](https://img.shields.io/badge/hardware-not%20retested-6e7781.svg)](docs/PROJECT_STATUS.md)
 
 > [!CAUTION]
 > 这是用于 ESP32、传感器采集、局域网 HTTP 与 Flutter 学习的教学原型，不是蜂群健康诊断、疾病识别、养蜂生产决策、气象预报、烟雾/燃气/火灾报警、环境安全、告警送达或无人值守系统。
