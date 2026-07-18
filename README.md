@@ -11,13 +11,12 @@
 >
 > DHT11、BH1750、BMP280、声音幅度与 MQ-2 原始 ADC 都只是实验性输入。MQ-2 原始 ADC 不是烟雾浓度、可燃气体检测、火灾判断或安全告警；声音幅度不是蜂群行为、健康或异常诊断；气压估算变化不是天气预报。HTTP、App、CI、构建产物和固定阈值标签均不代表设备在线、数据准确、蜂箱安全、蜂群状态、告警送达或有人处理。
 
-## 历史素材证据（2026-07-18 发布）
+## 项目照片与资料
 
-已脱敏的历史照片和历史 EDA 衍生文件。日期、脱敏处理、未公开材料和证据边界见 [MEDIA_EVIDENCE](docs/MEDIA_EVIDENCE.md)。
+这里整理了项目照片、界面截图和相关资料；文件处理说明见 [MEDIA_EVIDENCE](docs/MEDIA_EVIDENCE.md)。
 
-![历史蜂箱监测原型（拍摄日期未知）](assets/photos/historical-prototype.jpg)
+![蜂箱监测原型（拍摄日期未知）](assets/photos/historical-prototype.jpg)
 
-历史照片、截图或 EDA 不证明当前公开提交已烧录或完成真机复测。**当前未进行真机复测。**
 
 
 ## 当前状态与证据边界
