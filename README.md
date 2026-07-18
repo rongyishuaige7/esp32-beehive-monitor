@@ -17,19 +17,6 @@
 
 ![蜂箱监测原型（拍摄日期未知）](assets/photos/historical-prototype.jpg)
 
-
-
-## 当前状态与证据边界
-
-| 项目 | 当前事实 |
-| :-- | :-- |
-| 源码来源 | 桌面原始工程为只读来源；公开候选不会反向修改原目录。 |
-| 公开净化 | 不包含 Wi-Fi 凭据、私网地址、缓存、IDE 状态、构建物、APK、固件二进制、实物照片、视频、EDA、PCB、Gerber、制造文件或真实运行日志。 |
-| 固件构建 | 本机公开门禁与当前候选固件构建将在 `docs/VERIFICATION.md` 记录；GitHub 的固定成功构建与 `main` exact HEAD 对应关系以 [Hardware Lab](https://github.com/rongyishuaige7/hardware-lab) 为准。 |
-| Flutter 客户端 | 仅在 `flutter test`、`flutter analyze` 和 Android debug APK 构建通过后列为构建已验证；这不等于 Android/iOS 真机、Wi-Fi 或端到端验证。 |
-| 当前真机复测 | 未执行；没有以当前公开 commit 重新烧录、配网、读取传感器或联调 Flutter 客户端的日期化证据。 |
-| 媒体与 EDA | 当前未公开实物照片、演示视频、原理图、PCB、Gerber 或制造文件。 |
-
 ## 源码功能范围
 
 ```text
@@ -122,12 +109,6 @@ bash scripts/verify.sh
 - 仓库不分发真实 Wi-Fi 凭据、私网材料、APK、固件二进制、实物照片、视频、屏幕截图、EDA、PCB、Gerber、制造文件、真实日志或传感器数据。
 
 详细范围见[来源说明](docs/SOURCE_PROVENANCE.md)。
-
-## 验证与真机复测
-
-当前 CI 与本地门禁验证公开文件边界、源码契约和固定构建配置。它们不验证真实 ESP32、DHT11、BH1750、BMP280、MQ-2、声音输入、LED、电平、供电、Wi-Fi、HTTP、Android/iOS、Flutter 或端到端行为。
-
-将状态升级为“当前真机已复测”前，必须按[真机复测清单](docs/VERIFICATION.md)记录日期、完整 Git commit、精确板型、模块、供电、电平/分压、接线和每项通过/失败/未测结果。即使完成复测，本项目也不会成为安全、动物健康、天气或生产决策设备。
 
 ## 开源许可与第三方组件
 
