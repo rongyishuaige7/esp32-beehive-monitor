@@ -28,8 +28,8 @@
 - `reference`、`attention`、`high_threshold`、`unavailable` 只表示代码的固定比较规则或当前字段未提供，不表示正常、安全、危险、告警、诊断或处置。
 - 本项目不是养蜂生产、动物健康、火灾/燃气/烟雾安全、环境安全、应急响应或无人值守系统。
 
-## Historical media and EDA added on 2026-07-18
+## 2026-07-18 新增的历史素材与 EDA
 
-sanitized historical photo(s), historical EDA derivative(s). See [MEDIA_EVIDENCE](MEDIA_EVIDENCE.md) for dates, sanitization, omissions, and evidence limits.
+已脱敏的历史照片和历史 EDA 衍生文件。日期、脱敏处理、未公开材料和证据边界见 [MEDIA_EVIDENCE](MEDIA_EVIDENCE.md)。
 
-This publication update adds historical evidence only. Current hardware re-test not run.
+本次发布仅新增历史证据。当前未进行真机复测。
