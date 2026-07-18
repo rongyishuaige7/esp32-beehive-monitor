@@ -13,3 +13,5 @@ known_boundaries:
   - 构建与源码契约不证明 ESP32、DHT11、BH1750、BMP280、ADC、LED、Wi-Fi、HTTP 或 Flutter 端到端行为。
   - Actions Artifact 仅保留 14 天。
 ```
+
+- **历史媒体 / EDA：** 已加入经脱敏的历史衍生材料；范围和版本差异见 [`MEDIA_EVIDENCE.md`](MEDIA_EVIDENCE.md)。它们不证明当前公开提交已完成真机复测。

@@ -27,3 +27,9 @@
 - DHT11、BH1750、BMP280、声音幅度和 MQ-2 原始 ADC 是实验输入；它们不是动物健康、安全、气象、火灾、烟雾、燃气或生产决策证据。
 - `reference`、`attention`、`high_threshold`、`unavailable` 只表示代码的固定比较规则或当前字段未提供，不表示正常、安全、危险、告警、诊断或处置。
 - 本项目不是养蜂生产、动物健康、火灾/燃气/烟雾安全、环境安全、应急响应或无人值守系统。
+
+## Historical media and EDA added on 2026-07-18
+
+sanitized historical photo(s), historical EDA derivative(s). See [MEDIA_EVIDENCE](MEDIA_EVIDENCE.md) for dates, sanitization, omissions, and evidence limits.
+
+This publication update adds historical evidence only. Current hardware re-test not run.

@@ -1,0 +1,7 @@
+name,designator,footprint,quantity,part_number,manufacturer
+BH1750模块,U1,BH1750模块,1,,
+ESP32-DevKitC,U2,ESP32-DEVKIT-C,1,ESP32-WROOM-32,Espressif Systems
+DHT11 模块,U3,DHT11模块,1,,
+lm368模块,U4,LM386模块,1,,
+MQ2模块,U5,MQ2模块,1,,
+GY-BMP280,U6,GY-BMP280,1,,
