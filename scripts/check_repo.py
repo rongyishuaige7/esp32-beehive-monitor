@@ -50,7 +50,7 @@ def main() -> int:
         if path.suffix.lower() in FORBIDDEN_SUFFIXES: errors.append(f'forbidden binary/archive/key artifact: {rel}')
         if path.stat().st_size > 5 * 1024 * 1024: errors.append(f'file exceeds 5 MiB: {rel}')
     contracts = {
-        'README.md': [ 'MQ-2 原始 ADC 不是', 'HTTP `200` 只表示'],
+        'README.md': [ 'mq2Raw', '/api/status'],
         'firmware/platformio.ini': ['platform = espressif32@6.13.0', 'board = esp32dev'],
         'firmware/src/config.h': ['#if __has_include("wifi_credentials.h")', '#define MQ2_PIN 35', '#define WIFI_SSID ""'],
         'firmware/src/main.cpp': ['No local credentials: sensor sampling only; HTTP disabled.', 'startHttpIfConnected()', 'WiFi.begin(WIFI_SSID, WIFI_PASSWORD)'],
