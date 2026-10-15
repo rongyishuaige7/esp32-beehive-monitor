@@ -27,8 +27,8 @@ PATTERNS = [
     ('generic assigned secret', re.compile(r'''(?ix)\b(api[_-]?key|access[_-]?token|auth[_-]?token|secret|password|passwd|pwd)\b\s*[:=]\s*["'](?!YOUR_|EXAMPLE|REPLACE|CHANGEME|REDACTED|\[REDACTED\]|<YOUR_)([A-Za-z0-9+/=_!@#$%^&*.-]{8,})["']''')),
 ]
 ALLOWED_EXACT_LINES = {
-    ('docs/SOURCE_PROVENANCE.md', '/home/rongyi/桌面/beehive-monitor'),
-    ('docs/SOURCE_PROVENANCE.md', '/home/rongyi/桌面/Hardware Lab-公开仓库/esp32-beehive-monitor'),
+    ('docs/SOURCE_PROVENANCE.md', '~/桌面/beehive-monitor'),
+    ('docs/SOURCE_PROVENANCE.md', '~/桌面/Hardware Lab-公开仓库/esp32-beehive-monitor'),
 }
 ALLOWED_SUBSTRINGS = {'YOUR_WIFI_SSID', 'YOUR_WIFI_PASSWORD', '<REDACTED>', '[REDACTED]'}
 

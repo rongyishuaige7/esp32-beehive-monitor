@@ -5,7 +5,7 @@
 ## 只读来源
 
 ```text
-/home/rongyi/桌面/beehive-monitor
+~/桌面/beehive-monitor
 ```
 
 该目录不是 Git 工作树；本轮没有发现可作为历史基线的 Git commit 或历史 ZIP。它在本次整理中始终保持只读，公开候选不会反向覆盖、清理或删除原目录。
@@ -25,7 +25,7 @@
 ## 裁决
 
 - 桌面原始目录：本轮的只读源码来源；
-- 公开候选：`/home/rongyi/桌面/Hardware Lab-公开仓库/esp32-beehive-monitor`；
+- 公开候选：`~/桌面/Hardware Lab-公开仓库/esp32-beehive-monitor`；
 - 公开候选：使用全新 Git 历史，不能把原始网络凭据、缓存、本机配置或未知历史带入公开提交；
 - 权威范围：公开候选完成门禁、构建、CI 和线上回读后，其精确 `main` commit 才是本仓公开版本的权威记录。
 
